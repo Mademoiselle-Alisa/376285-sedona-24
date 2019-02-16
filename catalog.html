@@ -21,7 +21,58 @@
   	  	</nav>
   	  </header>
   	  <main>
-  	  	<!-- тут будет <section> с фильтрами -->
+  	  	<section class="filters">
+          <h2 class="visually-hidden">Список фильтров</h2>  
+          <form class="filters-form"action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <p>
+                <input type="checkbox" name="pool" id="pool">
+                <label for="pool">бассейн</label>
+              </p>
+              <p>
+                <input type="checkbox" name="parking" id="parking">
+                <label for="parking">парковка</label>
+              </p>
+              <p>
+                <input type="checkbox" name="wifi" id="wifi">
+                <label for="wifi">wi-fi</label>
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <p>
+                <input type="checkbox" name="hotel" id="hotel">
+                <label for="hotel">гостиница</label>
+              </p>
+              <p>
+                <input type="checkbox" name="motel" id="motel">
+                <label for="motel">мотель</label>
+              </p>
+              <p>
+                <input type="checkbox" name="apartments" id="apartments">
+                <label for="apartments">апартаменты</label>
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Стоимость в сутки(Р):</legend>
+              <p>
+                <label for="min-cost">от:</label>
+                <input type="text" name="min-cost" id="min-cost">
+              </p>
+              <p>
+                <label for="max-cost">до:</label>
+                <input type="text" name="max-cost" id="max-cost">
+              </p>
+
+              <p>
+                <!-- заготовка под ползунок, с которым не все так просто -->
+                <input type="range" min="0" max="10000" step="1" value="50"> 
+              </p>
+            </fieldset>
+            <button type="submit">найти</button>
+          </form>
+        </section>
 
   	  	<section class="hotel-list">
   	  		<h2 class="visually-hidden">Список доступных гостиниц</h2>
