@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none; 
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  color: #000;
+
+  background-color: #fff;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000;
+
+  background-color: #fff;
+}
+
+.site-navigation {
+  list-style: none;
+  font-weight: 700;
+}
+
+.site-navigation a,
+.site-navigation a:visited {
+  color: #000;
+
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* вложенность 3 - можно использовать в данном случае?
+ или в каталоге пункт меню активный - не ссылка?*/
+.site-navigation .active a{
+  color: #766357;
+}
+
+.preview {
+
+  background: url(../img/background-photo.jpg) no-repeat 0 0;
+  /* не забыть про маску */
+}
+
+.attraction h2 {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.attraction p {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: #333;
+}
+
+.feature-item {
+  text-align: center;
+  color: #fff;
+  background-color: #81b3d2;
+}
+
+.advices {
+  list-style: none;
+}
+
+.advices .advice-item {
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+}
+
+.advice-item {
+  text-align: center;
+  color: #000;
+  background-color: #eeeeee;
+}
+
+.feature-item h3,
+.advice-item h3,
+.advice-item b {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.feature-item p {
+  font-size: 14px;
+  line-height: 21px; 
+}
+
+.advice-item p {
+  font-size: 14px;
+  line-height: 21px; 
+  color: #333;
+}
+
+.booking {
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+}
+
+.booking b {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.booking p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+}
+
+.search-hotel-link,
+.search-hotel-link:visited {
+  font-size: 21px;
+  line-height: 1.24;
+  font-weight: 700;
+  color: #fff;
+
+  background-color: #766357;
+}
+
+.search-hotel-link:hover,
+.search-hotel-link:focus {
+  background-color: #604e43;
+}
+
+.search-hotel-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.search-hotel {
+  text-align: left;
+  color: #000;
+
+  background-color: #fff;
+}
+
+.search-hotel label {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.search-hotel input[type="text"] {
+  font-family: inherit;
+  color: inherit;
+
+  background-color: #f2f2f2;
+  box-shadow: none;
+  border: none;
+}
+
+.search-hotel input[type="text"]:hover {
+  background-color: #ebebeb;
+}
+
+.search-hotel input[type="text"]:focus {
+  background-color: #ffffff;
+  border: 2px solid #fff;
+}
+
+.search-hotel button[type="submit"] {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.24;
+  color: #fff;
+
+  background-color: #81b3d2;
+  border:none;
+}
+
+.search-hotel button[type="submit"]:hover,
+.search-hotel button[type="submit"]:focus {
+  background-color: #669ec0;
+}
+
+.search-hotel button[type="submit"]:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.search-hotel .calendar,
+.search-hotel .plus,
+.search-hotel .minus {
+  background-color: transparent;
+  border:none;
+}
+
+.calendar svg {
+  fill: #cacaca;
+}
+
+.calendar:hover svg,
+.calendar:focus svg {
+  fill: #000;
+}
+
+.calendar:active svg {
+  fill: #81b3d2;
+}
+
+.plus,
+.minus {
+  color: #cacaca;
+}
+
+.plus:hover, .plus:focus,
+.minus:hover, .minus:focus {
+  color: #000;
+}
+
+.plus:active,
+.minus:active {
+  color: #81b3d2;
+}
+
+.hashtag-sedona {
+  font-size: 21px;
+  line-height: 1.24;
+  text-align: center;
+  font-weight: 700;
+}
+
+.social-buttons {
+  list-style: none;
+  text-align: center;
+}
+
+.social-buttons a,
+.social-buttons a:visited {
+  color: #fff;
+  background-color: #81b3d2;
+
+}
+
+.social-buttons a:hover,
+.social-buttons a:focus {
+  background-color: #669ec0;
+}
+
+.social-buttons a:active {
+  opacity: 0.3;
+  background-color: #5496bd;
+}
+
+.copyright {
+  font-size: 14px;
+  line-height: 1.08;
+  text-align: center;
+}
+
+.copyright-logo svg,
+.copyright-logo:visited svg {
+  fill: #231f20;
+}
+
+.copyright-logo:hover svg,
+.copyright-logo:focus svg {
+  fill: #81b3d2;
+}
+
+.copyright-logo:active svg {
+  fill: #bdbbbc;
+}
