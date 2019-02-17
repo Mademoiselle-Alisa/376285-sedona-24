@@ -31,7 +31,6 @@ a {
 }
 
 .main-navigation {
-  font-size: 14px;
   line-height: 26px;
   color: #000;
 
@@ -40,6 +39,7 @@ a {
 
 .site-navigation {
   margin: 0;
+  padding: 0;
   list-style: none;
   font-weight: 700;
 }
@@ -59,9 +59,7 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* вложенность 3 - можно использовать в данном случае?
- или в каталоге пункт меню активный - не ссылка?*/
-.site-navigation .active a{
+.site-navigation-item.active a{
   color: #766357;
 }
 
@@ -79,7 +77,6 @@ a {
 }
 
 .attraction p {
-  font-size: 14px;
   line-height: 26px;
   text-align: center;
   color: #333;
@@ -93,19 +90,18 @@ a {
 
 .advices {
   margin: 0;
+  padding: 0;
   list-style: none;
-}
-
-.advices .advice-item {
-  text-align: center;
-  color: #000;
-  background-color: #fff;
 }
 
 .advice-item {
   text-align: center;
   color: #000;
   background-color: #eeeeee;
+}
+
+.advices .advice-item {
+  background-color: #fff;
 }
 
 .feature-item h3,
@@ -115,14 +111,7 @@ a {
   line-height: 21px;
 }
 
-.feature-item p {
-  font-size: 14px;
-  line-height: 21px; 
-}
-
 .advice-item p {
-  font-size: 14px;
-  line-height: 21px; 
   color: #333;
 }
 
@@ -135,11 +124,9 @@ a {
 .booking b {
   font-size: 30px;
   line-height: 36px;
-  font-weight: 700;
 }
 
 .booking p {
-  font-size: 14px;
   line-height: 24px;
   color: #333;
 }
@@ -172,32 +159,37 @@ a {
 }
 
 .search-hotel label {
-  font-size: 14px;
   line-height: 14px;
 }
 
 .search-hotel input[type="text"] {
   font-family: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
   color: inherit;
 
   background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
   box-shadow: none;
-  border: none;
 }
 
 .search-hotel input[type="text"]:hover {
   background-color: #ebebeb;
+  border: 2px solid #ebebeb;
 }
 
 .search-hotel input[type="text"]:focus {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 2px solid #fff;
 }
 
 .search-hotel button[type="submit"] {
+  font-family: inherit;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  text-transform: uppercase;
   color: #fff;
 
   background-color: #81b3d2;
@@ -207,6 +199,7 @@ a {
 .search-hotel button[type="submit"]:hover,
 .search-hotel button[type="submit"]:focus {
   background-color: #669ec0;
+
 }
 
 .search-hotel button[type="submit"]:active {
@@ -217,6 +210,10 @@ a {
 .search-hotel .calendar,
 .search-hotel .plus,
 .search-hotel .minus {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: uppercase;
   background-color: transparent;
   border:none;
 }
@@ -258,6 +255,7 @@ a {
 
 .social-buttons {
   margin: 0;
+  padding: 0;
   list-style: none;
   text-align: center;
 }
@@ -275,12 +273,14 @@ a {
 }
 
 .social-buttons a:active {
-  opacity: 0.3;
   background-color: #5496bd;
 }
 
+.social-buttons a:active svg{
+  opacity: 0.3;
+}
+
 .copyright {
-  font-size: 14px;
   line-height: 15px;
   text-align: center;
 }
@@ -312,7 +312,6 @@ a {
 .filters-form legend {
   font-size: 16px;
   font-weight: 700;
-  line-height: 21px;
   text-align: left;
 }
 
@@ -325,6 +324,8 @@ a {
 .filters-form input[type="text"] {
   font-family: inherit;
   font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
   color: #fff;
 
   background-color: transparent;
@@ -333,8 +334,10 @@ a {
 }
 
 .filters-form button[type="submit"] {
+  font-family: inherit;
   font-size: 14px;
   line-height: 21px;
+  text-transform: uppercase;
   color: #fff;
 
   background-color: transparent;
@@ -364,6 +367,7 @@ a {
 
 .filter-by-item {
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -421,13 +425,10 @@ a {
 
 .hotel-element span {
   font-size: 12px;
-  line-height: 21px;
   color: #333;
 }
 
 .hotel-element a {
-  font-size: 14px;
-  line-height: 21px;
   font-weight: 700;
   color: #fff;
 }
@@ -464,8 +465,6 @@ a {
 
 .hotel-raiting-number {
   color: #666;
-  font-size: 14px;
-  line-height: 21px;
 
   background-color: #f2f2f2;
 }
