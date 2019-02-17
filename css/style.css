@@ -65,7 +65,7 @@ a {
 
 .preview {
 
-  background: url(../img/background-photo.jpg) no-repeat 0 0;
+  background: #133d54 url(../img/background-photo.jpg) 0 0 no-repeat;
   /* не забыть про маску */
 }
 
