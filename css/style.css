@@ -25,9 +25,20 @@ a {
 }
 
 .container {
+  width: 1200px;
+
+  margin: 0 auto;
   color: #000;
 
   background-color: #fff;
+  box-shadow: 0px 5px 15px 0 rgba( 0, 1, 1, 0.2);
+}
+
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -70px;
 }
 
 .main-navigation {
@@ -42,11 +53,33 @@ a {
   padding: 0;
   list-style: none;
   font-weight: 700;
+
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+}
+
+.site-navigation-item {
+  width: 241px;
+
+  text-align: center;
+  box-sizing: border-box;
+
+}
+
+.shift-right {
+  margin-right: auto;
+}
+
+.shift-left {
+  margin-left: auto;
 }
 
 .site-navigation a,
 .site-navigation a:visited {
   color: #000;
+  display: inline-block;
+  padding: 15px;
 
 }
 
@@ -64,9 +97,17 @@ a {
 }
 
 .preview {
+  padding: 77px 0;
+  margin: 0;
 
-  background: #133d54 url(../img/background-photo.jpg) 0 0 no-repeat;
-  /* не забыть про маску */
+  background: url(../img/intro-mask.svg) 0 101% no-repeat,
+              url(../img/background-photo.jpg) 0 21% no-repeat;
+  background-color: #133d54;
+}
+
+.preview img {
+  display: block;
+  margin: 0 auto;
 }
 
 .attraction h2 {
@@ -74,6 +115,8 @@ a {
   line-height: 26px;
   text-align: center;
   font-weight: 700;
+
+
 }
 
 .attraction p {
@@ -82,10 +125,17 @@ a {
   color: #333;
 }
 
+.feature-and-image, .advices, .flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .feature-item {
   text-align: center;
   color: #fff;
   background-color: #81b3d2;
+
+  width: 400px;
 }
 
 .advices {
@@ -98,6 +148,8 @@ a {
   text-align: center;
   color: #000;
   background-color: #eeeeee;
+
+  width: 400px;
 }
 
 .advices .advice-item {
@@ -258,6 +310,13 @@ a {
   padding: 0;
   list-style: none;
   text-align: center;
+
+  width: 400px;
+  margin: 0 88px;
+}
+
+.social-buttons li {
+  display: inline-block;
 }
 
 .social-buttons a,
@@ -303,10 +362,19 @@ a {
   color: #fff;
 
   background: #28353c url(../img/filter-background.jpg) no-repeat 0 0;
+
+  padding: 25px 73px;
+}
+
+.filters-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .filters-form fieldset {
   border: none;
+  width: 241px;
 }
 
 .filters-form legend {
@@ -319,6 +387,15 @@ a {
   font-size: 13px;
   line-height: 1.5;
   text-align: left;
+}
+
+.form-part-wrapper {
+  width: 317px;
+  text-align: center;
+}
+
+.form-part-wrapper fieldset {
+  width: 100%;
 }
 
 .filters-form input[type="text"] {
@@ -351,7 +428,10 @@ a {
 }
 
 .hotel-list .hotel-list-header {
-  border-bottom: 1px solid #ccc;
+  display: flex;
+  padding: 0 73px;
+
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-list-header .hotel-list-results{
@@ -396,11 +476,64 @@ a {
   color: #000;
 }
 
+.filter-up-down {
+  padding: 0;
+  list-style: none;
+  width: 36px
+}
+
+.filter-up-down li {
+    display: inline-block;
+}
+
+.filter-up-down .up, .filter-up-down .down{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.filter-up-down .up {
+  border-width: 0 5px 11px 5px;
+  border-color: transparent transparent #cacaca transparent;
+}
+
+.filter-up-down .down {
+  border-width: 11px 5px 0 5px;
+  border-color: #cacaca transparent transparent transparent;
+}
+
+.filter-up-down .up:hover,
+.filter-up-down .up:focus {
+  border-color: transparent transparent #231f20 transparent;
+}
+
+.filter-up-down .down:hover,
+.filter-up-down .down:focus {
+  border-color: #231f20 transparent transparent transparent;
+}
+
+.filter-up-down .up:active,
+.filter-up-down .up.active {
+  border-color: transparent transparent #81b3d2 transparent;
+}
+
+.filter-up-down .down:active,
+.filter-up-down .down.active {
+  border-color: #81b3d2 transparent transparent transparent;
+}
+
+
 .hotel-element {
   color: #000;
 
   background-color: #fff;
-  border: 1px solid #ccc;
+  border-bottom: 1px solid #e5e5e5;
+
+  display: flex;
+  flex-direction: row;
+
+  padding: 20px 73px;
 }
 
 .hotel-element .hotel-name{
@@ -463,11 +596,41 @@ a {
   background-color: #503e33;
 }
 
-.hotel-raiting-number {
-  color: #666;
+.hotel-raiting {
+  width: 110px;
 
-  background-color: #f2f2f2;
+  text-align: right;
 }
 
+.star {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 3,5px;
+
+  background: url(../img/star.svg) 50% 50% no-repeat;
+}
+
+.hotel-raiting-number {
+  color: #666;
+  text-align: center;
+
+  background-color: #f2f2f2;
+
+  width: 110px;
+  display: inline-block;
+
+}
+
+
+footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0 73px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 
 
