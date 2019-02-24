@@ -55,7 +55,7 @@ a {
   font-weight: 700;
 
   display: flex;
-  flex-direction: row;
+
   width: 1200px;
 }
 
@@ -100,8 +100,8 @@ a {
   padding: 77px 0;
   margin: 0;
 
-  background: url(../img/intro-mask.svg) 0 101% no-repeat,
-              url(../img/background-photo.jpg) 0 21% no-repeat;
+  background: url(../img/intro-mask.svg) right bottom  -2px no-repeat,
+              url(../img/background-photo.jpg) right top -54px no-repeat;
   background-color: #133d54;
 }
 
@@ -125,9 +125,10 @@ a {
   color: #333;
 }
 
-.feature-and-image, .advices, .flex-container {
+.feature-and-image,
+.advices,
+.more-advices {
   display: flex;
-  flex-direction: row;
 }
 
 .feature-item {
@@ -138,7 +139,17 @@ a {
   width: 400px;
 }
 
-.advices {
+.feature-image {
+  width: 800px;
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+}
+
+.advices,
+.more-advices {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -147,13 +158,16 @@ a {
 .advice-item {
   text-align: center;
   color: #000;
-  background-color: #eeeeee;
 
   width: 400px;
 }
 
 .advices .advice-item {
   background-color: #fff;
+}
+
+.more-advices .advice-item {
+  background-color: #eeeeee;
 }
 
 .feature-item h3,
@@ -368,7 +382,6 @@ a {
 
 .filters-form {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -531,7 +544,6 @@ a {
   border-bottom: 1px solid #e5e5e5;
 
   display: flex;
-  flex-direction: row;
 
   padding: 20px 73px;
 }
@@ -542,17 +554,17 @@ a {
   font-weight: 700;
 }
 
-.hotel-name,
-.hotel-name:visited {
+.hotel-element .hotel-name,
+.hotel-element .hotel-name:visited {
   color: #000;
 }
 
-.hotel-name:hover,
-.hotel-name:focus {
+.hotel-element .hotel-name:hover,
+.hotel-element .hotel-name:focus {
   color: #81b3d2;
 }
 
-.hotel-name:active{
+.hotel-element .hotel-name:active{
   color: rgba(0,0,0, 0.3);
 }
 
@@ -623,14 +635,12 @@ a {
 }
 
 
-footer {
+.main-footer {
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 0 73px;
 }
 
 .footer-wrapper {
   display: flex;
-  justify-content: space-between;
 }
 
 
