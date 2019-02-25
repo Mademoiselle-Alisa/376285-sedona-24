@@ -326,7 +326,6 @@ a {
   text-align: center;
 
   width: 400px;
-  margin: 0 88px;
 }
 
 .social-buttons li {
@@ -637,9 +636,6 @@ a {
 
 .main-footer {
   background-color: rgba(255, 255, 255, 0.9);
-}
-
-.footer-wrapper {
   display: flex;
 }
 
