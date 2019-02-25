@@ -34,6 +34,10 @@ a {
   box-shadow: 0px 5px 15px 0 rgba( 0, 1, 1, 0.2);
 }
 
+.main-header {
+  position: relative;
+}
+
 .main-header-logo {
   position: absolute;
   top: 0;
@@ -79,8 +83,7 @@ a {
 .site-navigation a:visited {
   color: #000;
   display: inline-block;
-  padding: 15px;
-
+  margin: 15px 0;
 }
 
 .site-navigation a:hover,
@@ -97,17 +100,22 @@ a {
 }
 
 .preview {
-  padding: 77px 0;
-  margin: 0;
+  padding: 75px 370px 80px;
+  margin: 0 0 60px 0 ;
 
   background: url(../img/intro-mask.svg) right bottom  -2px no-repeat,
-              url(../img/background-photo.jpg) right top -54px no-repeat;
+              url(../img/background-photo.jpg) right top -56px no-repeat;
   background-color: #133d54;
+
+      max-height: 510px;
 }
 
 .preview img {
   display: block;
   margin: 0 auto;
+
+  width: 100%;
+  height: auto;
 }
 
 .attraction h2 {
@@ -115,6 +123,7 @@ a {
   line-height: 26px;
   text-align: center;
   font-weight: 700;
+      margin:  0 0 30px 0 ;
 
 
 }
@@ -123,6 +132,8 @@ a {
   line-height: 26px;
   text-align: center;
   color: #333;
+
+  margin: 0 0 47px 0;
 }
 
 .feature-and-image,
@@ -137,6 +148,12 @@ a {
   background-color: #81b3d2;
 
   width: 400px;
+
+      padding: 45px 0;
+}
+
+.feature-item h3 {
+  margin: 0 auto;
 }
 
 .feature-image {
@@ -326,16 +343,28 @@ a {
   text-align: center;
 
   width: 400px;
+
+  display: flex;
+  justify-content: center;
 }
 
 .social-buttons li {
   display: inline-block;
+  margin: 3px;
+
 }
 
 .social-buttons a,
 .social-buttons a:visited {
   color: #fff;
   background-color: #81b3d2;
+
+  display: flex;
+    align-items: center;
+    justify-content: center;
+
+  width: 46px;
+  height: 48px;
 
 }
 
@@ -637,6 +666,14 @@ a {
 .main-footer {
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
+      align-items: center;
 }
 
-
+.hashtag-sedona,
+.social-buttons, 
+.copyright {
+  width: 400px;
+  text-align: center;
+  margin: 0;
+  padding-top: 0;
+}
