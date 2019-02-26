@@ -57,23 +57,26 @@
               <label for="apartments">апартаменты</label>
             </p>
           </fieldset>
-          <div class="form-part-wrapper">
+          <div class="form-price-wrapper">
             <fieldset>
               <legend>Стоимость в сутки(Р):</legend>
-              <p>
-                <label for="min-cost">от:</label>
-                <input type="text" name="min-cost" id="min-cost">
-              </p>
-              <p>
-                <label for="max-cost">до:</label>
-                <input type="text" name="max-cost" id="max-cost">
-              </p>
-              <p>
-                <!-- заготовка под ползунок, с которым не все так просто -->
-                <input type="range" min="0" max="10000" step="1" value="50"> 
-              </p>
+              <div class="price-controls">
+                <label class="min-price">от:
+                  <input type="text" name="min-cost" id="min-cost" value="0">
+                </label>
+                <label class="max-price">до:
+                  <input type="text" name="max-cost" id="max-cost" value="3000">
+                </label>  
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button type="submit">показать</button>
             </fieldset>
-            <button type="submit">показать</button>
           </div>
         </form>
       </section>   
