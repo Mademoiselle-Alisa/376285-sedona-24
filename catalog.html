@@ -27,10 +27,10 @@
       <section class="filters">
         <h2 class="visually-hidden">Список фильтров</h2>  
         <form class="filters-form"action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
+          <fieldset class="chechbox-filters">
             <legend>Инфраструктура:</legend>
             <p>
-              <input type="checkbox" name="pool" id="pool">
+              <input type="checkbox" name="pool" id="pool" checked>
               <label for="pool">бассейн</label>
             </p>
             <p>
@@ -42,22 +42,22 @@
               <label for="wifi">wi-fi</label>
             </p>
           </fieldset>
-          <fieldset>
+          <fieldset class="chechbox-filters">
             <legend>Тип жилья:</legend>
             <p>
-              <input type="checkbox" name="hotel" id="hotel">
+              <input type="checkbox" name="hotel" id="hotel" checked>
               <label for="hotel">гостиница</label>
             </p>
             <p>
-              <input type="checkbox" name="motel" id="motel">
+              <input type="checkbox" name="motel" id="motel" checked>
               <label for="motel">мотель</label>
             </p>
             <p>
-              <input type="checkbox" name="apartments" id="apartments">
+              <input type="checkbox" name="apartments" id="apartments" checked>
               <label for="apartments">апартаменты</label>
             </p>
           </fieldset>
-          <div class="form-price-wrapper">
+          <div class="form-price-wrapper shift-left">
             <fieldset>
               <legend>Стоимость в сутки(Р):</legend>
               <div class="price-controls">
@@ -109,7 +109,7 @@
         </div>   
         <div class="hotel-element">
           <div class="hotel-image">
-            <img src="img/hotel-01.jpg" width="135" height="90" alt="Вид на отель Amara resort & spa">
+            <img src="img/hotel-01.jpg" width="" height="" alt="Вид на отель Amara resort & spa">
           </div>
           <div class="hotel-short-information">
             <h3><a href="#" class="hotel-name" class="hotel-name" class="hotel-name">Amara resort & spa</a></h3>
@@ -117,7 +117,7 @@
               <span>гостиница</span>
               <span>от 4000 р.</span>
             </p>
-            <p>
+            <p class="booking-buttons">
               <a href="#" class="information-btn">подробнее</a>
               <a href="#" class="booking-btn">забронировать</a>
             </p>
@@ -134,7 +134,7 @@
         </div>
         <div class="hotel-element">
           <div class="hotel-image">
-            <img src="img/hotel-02.jpg" width="135" height="90" alt="Вид на отель Desert quaik inn">
+            <img src="img/hotel-02.jpg" width="" height="" alt="Вид на отель Desert quaik inn">
           </div>
           <div class="hotel-short-information">
             <h3><a href="#" class="hotel-name" class="hotel-name">Desert quaik inn</a></h3>
@@ -142,7 +142,7 @@
               <span>мотель</span>
               <span>от 3000 р.</span>
             </p>
-            <p>
+            <p class="booking-buttons">
               <a href="#" class="information-btn">подробнее</a>
               <a href="#" class="booking-btn">забронировать</a>
             </p>
@@ -158,7 +158,7 @@
         </div>
         <div class="hotel-element">
           <div class="hotel-image">
-            <img src="img/hotel-03.jpg" width="135" height="90" alt="Вид на отель Villas at poco diablo">
+            <img src="img/hotel-03.jpg" width="" height="" alt="Вид на отель Villas at poco diablo">
           </div>
           <div class="hotel-short-information">
             <h3><a href="#" class="hotel-name">Villas at poco diablo</a></h3>
@@ -166,7 +166,7 @@
               <span>апартаменты</span>
               <span>от 2000 р.</span>
             </p>
-            <p>
+            <p class="booking-buttons">
               <a href="#" class="information-btn">подробнее</a>
               <a href="#" class="booking-btn">забронировать</a>
             </p>
