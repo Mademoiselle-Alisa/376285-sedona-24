@@ -119,6 +119,8 @@ a {
 }
 
 .attraction {
+  display: flex;
+  flex-direction: column;
     text-align: center;
     margin-bottom: 52px;
 }
@@ -721,10 +723,10 @@ box-sizing: border-box;
 }
 
 .hotel-list .hotel-list-header {
-  display: flex;
-  padding: 0 73px;
-
-  border-bottom: 1px solid #e5e5e5;
+display: flex;
+    padding: 0 73px;
+    border-bottom: 1px solid #e5e5e5;
+    align-items: center;
 }
 
 .hotel-list-header .hotel-list-results{
@@ -732,21 +734,28 @@ box-sizing: border-box;
   font-weight: 700;
   line-height: 26px;
 }
+.hotel-list-results-filter {
+ display: flex;
+     margin-left: 47px;
+}
 
 .hotel-list-results-filter span {
   font-size: 12px;
-  line-height: 18px;
+  line-height: 19px;
 }
 
 .filter-by-item {
-  margin: 0;
+  display: flex;
+  margin: 0 0 0 25px;
   padding: 0;
   list-style: none;
+
 }
 
 .filter-item {
   font-size: 12px;
-  line-height: 18px;
+    line-height: 19px;
+    padding: 0 16.5px;
 }
 
 .filter-item a,
@@ -770,9 +779,11 @@ box-sizing: border-box;
 }
 
 .filter-up-down {
+      display: flex;
+    justify-content: space-between;
   padding: 0;
   list-style: none;
-  width: 36px
+  width: 32px
 }
 
 .filter-up-down li {
@@ -787,12 +798,12 @@ box-sizing: border-box;
 }
 
 .filter-up-down .up {
-  border-width: 0 5px 11px 5px;
+  border-width: 0 6px 11px 6px;
   border-color: transparent transparent #cacaca transparent;
 }
 
 .filter-up-down .down {
-  border-width: 11px 5px 0 5px;
+  border-width: 11px 6px 0 6px;
   border-color: #cacaca transparent transparent transparent;
 }
 
