@@ -567,7 +567,7 @@ a {
 
 .check-people .plus {
     top: 0;
-    left: calc(100% - 37px);
+    right: 0;
 }
 
 .check-people .minus {
