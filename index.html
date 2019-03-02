@@ -118,16 +118,20 @@
           <div class="check-people">
             <div class="adults">
               <label for="adults">Взрослые:</label>
-              <button type="button" class="minus" aria-label="увеличить количество"></button>
-              <input id="adults" type="text" name="adults-number" value="2">
-              <button type="button" class="plus" aria-label="уменьшить количество"></button>
+              <div class="button-wrapper">
+                <button type="button" class="minus" aria-label="увеличить количество"></button>
+                <input id="adults" type="text" name="adults-number" value="2">
+                <button type="button" class="plus" aria-label="уменьшить количество"></button>
+              </div>
             </div>
       
             <div class="children">
-              <label for="children">Дети:</label>
-              <button type="button" class="minus" aria-label="увеличить количество"></button>
-              <input id="children" type="text" name="children-number" value="0">
-              <button type="button" class="plus" aria-label="уменьшить количество"></button>
+              <label for="children" class="small-label">Дети:</label>
+              <div class="button-wrapper">
+                <button type="button" class="minus" aria-label="увеличить количество"></button>
+                <input id="children" type="text" name="children-number" value="0">
+                <button type="button" class="plus" aria-label="уменьшить количество"></button>
+              </div>  
             </div>
           </div>
           <button type="submit">найти</button>

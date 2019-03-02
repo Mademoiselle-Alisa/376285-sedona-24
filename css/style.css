@@ -392,97 +392,8 @@ a {
     margin-bottom: 55px;
 }
 
-.check-people .adults {
-    width: 230px;
-    margin: 0; 
-}
-
-.check-people .children {
-    width: 179px;
-    margin: 0 ;
-}
-
-.adults label {
-    margin-right: 35px;
-}
-
-.children label {
-    margin-right: 23px;
-}
-
-.check-people input {
-    width: 55px;
-    padding: 6px 0;
-
-    text-align: center;
-}
-
-.check-people .plus,
-.check-people .minus {
-    position: relative;
-    padding: 23px 15px 14px;
-
-    background-color: #f2f2f2;
-}
-
-.check-people .minus {
-    margin-right: -8px;
-}
-
-.check-people .plus {
-    margin-left: -9px;
-}
-
-.check-people .minus::before {
-    position: absolute;
-    top: 18px;
-    left: 13px;
-
-    width: 12px;
-
-    content: '';
-
-    border-bottom: 3px solid rgba(0, 1, 1, 0.15);
-}
-
-.check-people .plus::before {
-    position: absolute;
-    top: 18px;
-    left: 5px;
-
-    width: 11px;
-
-    content: '';
-
-    border-bottom: 3px solid rgba(0, 1, 1, 0.15);
-}
-
-.check-people .plus::after {
-    position: absolute;
-    top: 14px;
-    left: 9px;
-
-    width: 0;
-    height: 11px;
-
-    content: '';
-
-    border-right: 3px solid rgba(0, 1, 1, 0.15);
-}
-
-.check-people .minus:hover::before,
-.check-people .minus:focus::before,
-.check-people .plus:hover::before,
-.check-people .plus:focus::before,
-.check-people .plus:hover::after,
-.check-people .plus:focus::after {
-  border-color: #000;
-}
-
-.check-people .minus:active::before,
-.check-people .plus:active::before,
-.check-people .plus:active::after {
-  border-color: #81b3d2;
+.search-hotel .check-people:last-child {
+    margin-bottom: 0;
 }
 
 .search-hotel-link,
@@ -525,8 +436,14 @@ a {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    flex: none;        
     line-height: 14px;
     font-weight: 700;
+    display: block;
+    box-sizing: border-box;
+
+    width: 113px;
+    padding-right: 10px;
 }
 
 .search-hotel input[type='text'] {
@@ -611,6 +528,103 @@ a {
 .plus:active,
 .minus:active {
     color: #81b3d2;
+}
+
+.check-people .adults,
+.check-people .children {
+    margin: 0; 
+}
+
+.check-people .small-label {
+    width: 65px;
+}
+
+.check-people .button-wrapper {
+  position: relative;
+  margin: 0;
+}
+
+.check-people input {
+    width: 40px;
+    padding: 6px 0;
+    margin: 0 37px;
+
+    text-align: center;
+}
+
+.check-people .plus,
+.check-people .minus {
+    position: absolute;
+    
+    display: block;
+    box-sizing: border-box;
+    width: 37px;
+    height: 37px;
+    padding: 23px 15px 14px;
+
+    background-color: #f2f2f2;
+}
+
+.check-people .plus {
+    top: 0;
+    left: calc(100% - 37px);
+}
+
+.check-people .minus {
+    top: 0;
+    left: 0;
+}
+
+.check-people .minus::before {
+    position: absolute;
+    top: 18px;
+    left: 13px;
+
+    width: 12px;
+
+    content: '';
+
+    border-bottom: 3px solid rgba(0, 1, 1, 0.15);
+}
+
+.check-people .plus::before {
+    position: absolute;
+    top: 18px;
+    left: 13px;
+
+    width: 11px;
+
+    content: '';
+
+    border-bottom: 3px solid rgba(0, 1, 1, 0.15);
+}
+
+.check-people .plus::after {
+    position: absolute;
+    top: 14px;
+    left: 17px;
+
+    width: 0;
+    height: 11px;
+
+    content: '';
+
+    border-right: 3px solid rgba(0, 1, 1, 0.15);
+}
+
+.check-people .minus:hover::before,
+.check-people .minus:focus::before,
+.check-people .plus:hover::before,
+.check-people .plus:focus::before,
+.check-people .plus:hover::after,
+.check-people .plus:focus::after {
+  border-color: #000;
+}
+
+.check-people .minus:active::before,
+.check-people .plus:active::before,
+.check-people .plus:active::after {
+  border-color: #81b3d2;
 }
 
 .hashtag-sedona {
