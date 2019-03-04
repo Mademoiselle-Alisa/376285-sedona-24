@@ -822,10 +822,6 @@ a {
     background: url(../img/checkbox-on.svg) no-repeat 0 0;
 }
 
-.chechbox-filters input[type='checkbox'] {
-    display: none;
-}
-
 .chechbox-filters input[type='checkbox']:checked ~ label::before {
     display: none;
 }
@@ -840,6 +836,14 @@ a {
 
 .chechbox-filters input[type='checkbox']:checked:disabled ~ label::after {
     background: url(../img/checkbox-on-disabled.svg) no-repeat 0 0;
+}
+
+
+.chechbox-filters input[type='checkbox']:focus ~ label {
+    outline-color: #fff; 
+    outline-offset: -2px;
+    outline-style: auto;
+    outline-width: 5px;
 }
 
 .form-price-wrapper {
@@ -905,6 +909,7 @@ a {
     line-height: 21px;
 
     width: 50px;
+    height: 30px;
     margin: 0;
 
     text-transform: uppercase;
