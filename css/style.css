@@ -55,6 +55,9 @@ a {
 }
 
 .main-navigation {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
     line-height: 26px;
 
     color: #000;
@@ -69,10 +72,11 @@ a {
     display: -ms-flexbox;
 
     display: flex;
+    box-sizing: border-box;
 
     width: 1200px;
     margin: 0;
-    padding: 0;
+    padding: 0 73px;
 
     list-style: none;
 }
@@ -80,9 +84,16 @@ a {
 .site-navigation-item {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 241px;
+    width: 240px;
 
-    text-align: center;
+}
+
+.site-navigation-item:nth-child(2) {
+  margin-right: auto;
+}
+.site-navigation-item:last-child,
+.site-navigation-item:nth-last-child(2) {
+  text-align: right;
 }
 
 .shift-right {
@@ -120,7 +131,7 @@ a {
     margin: 0 0 60px 0 ;
     padding: 75px 370px 80px;
 
-    background: url(../img/intro-mask.svg) right bottom  -2px no-repeat,
+    background: url(../img/intro-mask.svg) right bottom -2px no-repeat,
     url(../img/background-photo.jpg) right top -56px no-repeat;
     background-color: #133d54;
 }
@@ -152,7 +163,7 @@ a {
     font-weight: 700;
     line-height: 26px;
 
-    margin: 0 0 25px 0 ;
+    margin: 0 370px 25px;
 }
 
 .attraction p {
@@ -185,6 +196,10 @@ a {
     margin: 0 auto;
 }
 
+.feature-item:first-of-type h3 {
+    margin: 2px 125px 24px;
+}
+
 .feature-image {
     width: 800px;
     height: 256px;
@@ -194,6 +209,8 @@ a {
     width: 100%;
     height: auto;
 }
+
+
 
 .advices,
 .more-advices {
@@ -280,10 +297,14 @@ a {
 }
 
 .feature-item p {
-    margin: 0 50px 22px;
+    margin: 0 40px 22px;
 
     text-align: center;
 }
+
+.feature-item:first-of-type p {
+    margin: 0 50px 22px;
+} 
 
 .advice-item p {
     color: #333;
@@ -331,9 +352,9 @@ a {
     -webkit-box-sizing: border-box;
 
             box-sizing: border-box;
-    width: 570px;
-    margin-left: -285px;
-    padding: 55px;
+    width: 568px;
+    margin-left: -283px;
+    padding: 55px 54px;
 
     background-color: #fff;
     -webkit-box-shadow: 0 5px 15px 0 rgba( 0, 1, 1, .2);
@@ -345,7 +366,7 @@ a {
     display: -ms-flexbox;
     display: flex;
 
-    margin: 0 0 30px;
+    margin: 0 1px 30px;
 
     -webkit-box-pack: justify;
 
@@ -366,13 +387,13 @@ a {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 346px;
-    padding: 6px 11px;
+    padding: 6px 9px;
 }
 
 .check-dates .calendar {
     position: absolute;
-    top: 6px;
-    right: 2px;
+    top: 5px;
+    right: 5px;
 }
 
 .search-hotel .calendar,
@@ -389,7 +410,8 @@ a {
 }
 
 .search-hotel .check-people {
-    margin-bottom: 55px;
+    margin-top: 1px;
+    margin-bottom: 54px;
 }
 
 .search-hotel .check-people:last-child {
@@ -407,7 +429,7 @@ a {
     -webkit-box-sizing: border-box;
 
             box-sizing: border-box;
-    width: 570px;
+    width: 568px;
     margin: 0 auto;
     padding: 30px;
 
@@ -439,11 +461,20 @@ a {
     flex: none;        
     line-height: 14px;
     font-weight: 700;
+    letter-spacing: 0.4px;
     display: block;
     box-sizing: border-box;
 
     width: 113px;
     padding-right: 10px;
+}
+
+.adults label {
+    letter-spacing: 0px;
+}
+
+.children label {
+    letter-spacing: 0;
 }
 
 .search-hotel input[type='text'] {
@@ -482,6 +513,7 @@ a {
     line-height: 26px;
 
     padding: 16px 0;
+    margin: 0 1px;
 
     text-transform: uppercase;
 
@@ -536,7 +568,7 @@ a {
 }
 
 .check-people .small-label {
-    width: 65px;
+    width: 66px;
 }
 
 .check-people .button-wrapper {
@@ -547,7 +579,7 @@ a {
 .check-people input {
     width: 40px;
     padding: 6px 0;
-    margin: 0 37px;
+    margin: 0 36px;
 
     text-align: center;
 }
