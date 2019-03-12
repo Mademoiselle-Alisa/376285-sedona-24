@@ -110,6 +110,8 @@ a {
 
     margin: 15px 0;
 
+    vertical-align: inherit;
+
     color: #000;
 }
 
@@ -209,8 +211,6 @@ a {
     width: 100%;
     height: auto;
 }
-
-
 
 .advices,
 .more-advices {
@@ -689,6 +689,7 @@ a {
 
 .social-buttons li {
     display: inline-block;
+    vertical-align: inherit;
 
     margin: 3px;
 }
@@ -820,6 +821,7 @@ a {
     position: relative;
 
     display: inline-block;
+    vertical-align: inherit;
 
     padding-left: 40px;
 
@@ -923,6 +925,7 @@ a {
     line-height: 30px;
 
     display: inline-block;
+    vertical-align: inherit;
 
     cursor: pointer;
     vertical-align: top;
@@ -1119,11 +1122,13 @@ a {
 
 .filter-up-down li {
     display: inline-block;
+    vertical-align: inherit;
 }
 
 .filter-up-down .up,
 .filter-up-down .down {
     display: inline-block;
+    vertical-align: inherit;
 
     width: 0;
     height: 0;
@@ -1321,6 +1326,7 @@ a {
 
 .star {
     display: inline-block;
+    vertical-align: inherit;
 
     width: 18px;
     height: 18px;
@@ -1331,6 +1337,7 @@ a {
 
 .hotel-raiting-number {
     display: inline-block;
+    vertical-align: inherit;
 
     width: 110px;
     padding: 3px 0;
