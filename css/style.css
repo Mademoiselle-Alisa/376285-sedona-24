@@ -271,22 +271,6 @@ a {
     background-color: #fff;
 }
 
-.more-advices .advice-item {
-    margin: 0;
-    padding: 48px 65px 39px;
-
-    background-color: #eee;
-}
-
-.more-advices .advice-item h3 {
-    margin: 0 0 24px;
-    padding: 0 55px;
-}
-
-.more-advices .advice-item p {
-    margin: 0 0 20px;
-}
-
 .feature-item h3,
 .advice-item h3,
 .advice-item b {
@@ -308,6 +292,22 @@ a {
 
 .advice-item p {
     color: #333;
+}
+
+.more-advices .advice-item {
+    margin: 0;
+    padding: 48px 65px 39px;
+
+    background-color: #eee;
+}
+
+.more-advices h3 {
+    margin: 0 0 24px;
+    padding: 0 55px;
+}
+
+.more-advices .advice-item p {
+    margin: 0 0 20px;
 }
 
 .booking {
