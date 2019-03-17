@@ -184,6 +184,10 @@ a {
   display: flex;
 }
 
+.feature-and-image {
+  background-color: #81b3d2;
+}
+
 .feature-item {
   width: 400px;
   padding: 45px 0 0 0;
