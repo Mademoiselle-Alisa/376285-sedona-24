@@ -377,7 +377,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
+  animation-name: s-form;
+  animation-duration: .3s;
 }
+
+@keyframes s-form {
+ 0% { transform: translateY(-85px); }
+ 100% { transform: translateY(0); }
+ }
 
 .search-hotel div {
   display: -webkit-box;
@@ -444,10 +452,12 @@ a {
   display: block;
 
   -webkit-box-sizing: border-box;
-      box-sizing: border-box;
+    box-sizing: border-box;
   width: 568px;
   margin: 0 auto;
   padding: 30px;
+
+  cursor: pointer;
 
   color: #fff;
   background-color: #766357;
