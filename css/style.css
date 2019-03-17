@@ -1080,9 +1080,10 @@ a {
 .hotel-element .hotel-image {
   overflow: hidden;
 
-  max-width: 135px;
-  max-height: 90px;
+  width: 135px;
+  height: 90px;
   margin: 0;
+  flex: none
 }
 
 .hotel-image img {
