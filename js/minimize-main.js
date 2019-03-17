@@ -1,0 +1,1 @@
+var bookingLink=document.querySelector(".search-hotel-link"),bookingForm=document.querySelector(".search-hotel");bookingLink.addEventListener("click",function(o){o.preventDefault(),bookingForm.classList.toggle("form-show")});
