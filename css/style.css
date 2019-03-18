@@ -382,14 +382,16 @@ a {
 }
 
 @keyframes s-form {
- 0% { transform: translateY(-85px); }
- 100% { transform: translateY(0); }
+  0% { transform: translateY(-85px); }
+  100% { transform: translateY(0); }
  }
 
 @keyframes swing {
-    0%{ transform:rotateY(-25deg)}
-    50%{ transform:rotateY(05deg)}
-    100%{ transform:rotateY(-25deg)}
+  0%{ transform:rotateY( 0deg)}
+  25%{ transform:rotateY(-25deg)}
+  50%{ transform:rotateY(0deg)}
+  75%{ transform:rotateY(25deg)}
+  100%{ transform:rotateY(0deg)}
 }
 
 .booking form.search-hotel.modal-error {
@@ -1439,5 +1441,3 @@ a {
 
   height: 475px;
 }
-
-
