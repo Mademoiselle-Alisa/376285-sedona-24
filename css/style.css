@@ -801,27 +801,24 @@ a {
   background: url(../img/checkbox-on.svg) no-repeat 0 0;
 }
 
-.chechbox-filters input[type='checkbox']:checked ~ label::before {
+.chechbox-filters input[type='checkbox']:checked + label::before {
   display: none;
 }
 
-.chechbox-filters input[type='checkbox']:checked ~ label::after {
+.chechbox-filters input[type='checkbox']:checked + label::after {
   display: inherit;
 }
 
-.chechbox-filters input[type='checkbox']:disabled ~ label::before {
+.chechbox-filters input[type='checkbox']:disabled + label::before {
   background: url(../img/checkbox-off-disabled.svg) no-repeat 0 0;
 }
 
-.chechbox-filters input[type='checkbox']:checked:disabled ~ label::after {
+.chechbox-filters input[type='checkbox']:checked:disabled + label::after {
   background: url(../img/checkbox-on-disabled.svg) no-repeat 0 0;
 }
 
-.chechbox-filters input[type='checkbox']:focus ~ label {
-  outline-width: 5px;
-  outline-style: auto;
-  outline-color: #fff;
-  outline-offset: -2px;
+.chechbox-filters input[type='checkbox']:focus + label {
+  box-shadow: 0 0 3px 2px #99d2f7;
 }
 
 .form-price-wrapper {
@@ -930,6 +927,12 @@ a {
   background: #ababab;
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, .2);
       box-shadow: 0 2px 1px 0 rgba(0, 1, 1, .2);
+}
+
+.range-toggle:hover, .range-toggle:focus {
+  top: -10px;
+
+  border: 9px solid #fff;
 }
 
 .range-toggle-min {
@@ -1154,6 +1157,7 @@ a {
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
+  letter-spacing: 0.2px;
   
   margin: -3px 0 8px;
 }
@@ -1440,4 +1444,8 @@ a {
   overflow: visible;
 
   height: 475px;
+}
+
+.map iframe {
+ border: none;
 }
