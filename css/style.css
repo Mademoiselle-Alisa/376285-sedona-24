@@ -1356,8 +1356,8 @@ a {
   vertical-align: inherit;
 }
 
-.social-buttons a,
-.social-buttons a:visited {
+.social-link,
+.social-link:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1376,16 +1376,16 @@ a {
   justify-content: center;
 }
 
-.social-buttons a:hover,
-.social-buttons a:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: #669ec0;
 }
 
-.social-buttons a:active {
+.social-link:active {
   background-color: #5496bd;
 }
 
-.social-buttons a:active svg {
+.social-link:active svg {
   opacity: .3;
 }
 
