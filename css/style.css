@@ -377,6 +377,12 @@ a {
   -ms-flex-direction: column;
 }
 
+.nojs form.search-hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .booking form.search-hotel.form-show {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1312,6 +1318,7 @@ a {
   display: flex;
 
   padding: 33px 0 40px;
+  margin-top: -120px;
 
   background-color: rgba(255, 255, 255, .9);
   -webkit-box-shadow: 0 5px 15px 0 rgba( 0, 1, 1, .2);
@@ -1459,7 +1466,8 @@ a {
 .map {
   overflow: visible;
 
-  height: 475px;
+  height: 593px;
+  background: url(../img/map.jpg) 0 0 no-repeat;
 }
 
 .map iframe {
