@@ -1,4 +1,4 @@
-  document.querySelector('body').classList.remove('nojs')
+  document.querySelector('body').classList.remove('nojs');
 
   var bookingLink = document.querySelector(".search-hotel-link");
   var bookingForm = document.querySelector(".search-hotel"); 
