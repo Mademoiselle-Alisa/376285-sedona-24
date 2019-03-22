@@ -456,8 +456,7 @@ a {
   margin-bottom: 0;
 }
 
-.search-hotel-link,
-.search-hotel-link:visited {
+.search-hotel-link {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -473,6 +472,7 @@ a {
   cursor: pointer;
 
   color: #fff;
+  border: none;
   background-color: #766357;
 }
 
@@ -1001,9 +1001,12 @@ a {
   margin-left: 47px;
 }
 
-.hotel-list-results-filter span {
+.hotel-list-results-filter h3 {
   font-size: 12px;
+  font-weight: 400;
   line-height: 19px;
+
+  margin: 0;
 }
 
 .filter-by-item {
