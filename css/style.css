@@ -322,6 +322,7 @@ a {
 
 .more-advices .more-description {
   margin: 0 0 20px;
+  color: #333;
 }
 
 .booking {
@@ -760,7 +761,7 @@ a {
 
 .chechbox-filters label {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.5;
 
   position: relative;
@@ -1277,7 +1278,7 @@ a {
   background: url(../img/star.svg) right -1px top -1px no-repeat;
 }
 
-.hotel-raiting-number {
+.hotel-element .hotel-raiting-number {
   display: inline-block;
 
   width: 110px;
